@@ -11,32 +11,32 @@ app.use(express.json());
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '/Develop/public/index.html'));
+  res.sendFile(path.join(__dirname, '/public/index.html'));
 });
 
 app.get('/notes', (req, res) => {
-  res.sendFile(path.join(__dirname, '/Develop/public/notes.html'));
+  res.sendFile(path.join(__dirname, '/public/notes.html'));
 });
 
 app.get('/api/notes', (req, res) => {
-  return res.json(JSON.parse(fs.readFileSync('./Develop/db/db.json', 'utf-8')));
+  return res.json(JSON.parse(fs.readFileSync('./db/db.json', 'utf-8')));
 });
 
 app.post('/api/notes', (req, res) => {
-  const notes = JSON.parse(fs.readFileSync('./Develop/db/db.json', 'utf-8'));
+  const notes = JSON.parse(fs.readFileSync('./db/db.json', 'utf-8'));
   notes.push({
     id: nanoid(),
     title: req.body.title,
     text: req.body.text
   });
-  fs.writeFileSync('./Develop/db/db.json', JSON.stringify(notes));
+  fs.writeFileSync('./db/db.json', JSON.stringify(notes));
   res.json(true);
 });
 
 app.delete('/api/notes/:id', (req, res) => {
-  const notes = JSON.parse(fs.readFileSync('./Develop/db/db.json', 'utf-8'));
+  const notes = JSON.parse(fs.readFileSync('./db/db.json', 'utf-8'));
   const newNotes = notes.filter(note => note.id !== req.params.id);
-  fs.writeFileSync('./Develop/db/db.json', JSON.stringify(newNotes));
+  fs.writeFileSync('./db/db.json', JSON.stringify(newNotes));
   res.json(true);
 });
 
