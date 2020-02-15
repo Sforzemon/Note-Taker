@@ -12,3 +12,6 @@ A new note can be created by clicking the pen Icon on the right, if you happen t
 Clicking on the title of a note on the left will allow you to make edits to that note.
 
 while a note is in focus (has been clicked on) you may press the trashcan of that respective note and it will be deleted.  Each note has its own unique ID that the delete function is looking for, which ensures the random notes will not be deleted along with the one you have chosen.
+
+![Heroku index page for note app](https://raw.githubusercontent.com/Sforzemon/Note-Taker/master/Develop/images/Screen%20Shot%202020-02-15%20at%2012.21.37%20AM.png)
+![Heroku app page for note app](https://raw.githubusercontent.com/Sforzemon/Note-Taker/master/Develop/images/Screen%20Shot%202020-02-15%20at%2012.21.58%20AM.png)
