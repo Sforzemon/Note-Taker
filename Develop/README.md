@@ -11,4 +11,4 @@ A new note can be created by clicking the pen Icon on the right, if you happen t
 
 Clicking on the title of a note on the left will allow you to make edits to that note.
 
-while a note is in focus (has been clicked on) you may press the trashcan of that respective note and it will be deleted.  Each note has its own unique ID that the delete function is looking for, which ensures the random notes will not be deleted along with the one you have chosed.
+while a note is in focus (has been clicked on) you may press the trashcan of that respective note and it will be deleted.  Each note has its own unique ID that the delete function is looking for, which ensures the random notes will not be deleted along with the one you have chosen.
