@@ -12,7 +12,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "mysql": "^2.16.0",
-    "nanoid": "^2.1.11",
+    "nanoid": "^3.1.31",
     "path": "^0.12.7"
   }
 }
